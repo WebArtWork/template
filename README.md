@@ -1,13 +1,10 @@
 # Template
-Module to support server side rendering with use of [Swig Templates](https://node-swig.github.io/swig-templates/).
+Module to support server side rendering with use of [Wjst](https://webartwork.github.io/wjst).
 
-## Runners
-### Dev on Template
-`waw`<br>
-
-### Generate new page
-`waw page PAGE_NAME`<br>
-`waw p PAGE_NAME`<br>
+## Core
+### waw.serve
+### waw.build
+### waw.url
 
 ## Contributing
 Thanks for your interest in contributing! Read up on our guidelines for

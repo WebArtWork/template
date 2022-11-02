@@ -5,10 +5,13 @@ module.exports = function(waw){
 	waw.derer.setFilter('translate', (phrase) => {
 		return phrase;
 	});
+
 	let template = {};
+
 	if (fs.existsSync(process.cwd() + sep + 'template.json')) {
 		template = JSON.parse(fs.readFileSync(process.cwd() + sep + 'template.json'));
 	}
+
 	waw.build = function(root, page){
 		fs.mkdirSync(root+sep+'dist', { recursive: true });
 		if (!fs.existsSync(root+sep+'index.html')) {
